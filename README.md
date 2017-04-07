@@ -1,6 +1,11 @@
 # MPLABX & XC8 Examples
 ***
 Programación de microcontroladores PICs en C, usando MPLAB x y XC8. Son algunas parcticas que se han realizado para los microcontroladores PICs en C, si deseas saber mas a detalle de cada uno de los codigos aqui mostrados te invito a visitar [E&R by MrChuckuee] (http://mrchunckuee.blogspot.mx/p/mplapx-y-xc8.html) 
+
+<p align="center">
+  <img src="http://2.bp.blogspot.com/-n3qpKEQO2w4/VF8P-RfQv5I/AAAAAAAAB5k/QfjsE5pZKYU/s1600/mplab%2Bx%2By%2Bxc8%2B-%2Belectronica%2By%2Brobotica.png"/>
+</p>
+
 ***
 **Listado de material disponible:**
 - XC8_001: LED Intermitente
