@@ -1,0 +1,17 @@
+_wl_module_tx_config: CODE, 210 0 436
+_ISR: CODE, 8 0 198
+_wl_module_write_register: CODE, 922 0 38
+_main: CODE, 646 0 156
+_wl_module_config_register: CODE, 1054 0 26
+i2_spi_fast_shift: CODE, 1196 0 18
+_wl_module_send: CODE, 802 0 76
+_wl_module_init: CODE, 1080 0 26
+__initialization: CODE, 1156 0 12
+_spi_init: CODE, 960 0 34
+__delay_10ms: CODE, 994 0 32
+_spi_transmit_sync: CODE, 878 0 44
+_wl_module_set_RADDR: CODE, 1026 0 28
+_wl_module_set_TADDR: CODE, 1132 0 24
+_spi_fast_shift: CODE, 1178 0 18
+i2_wl_module_config_register: CODE, 1106 0 26
+Total: 1192
