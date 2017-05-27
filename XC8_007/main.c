@@ -1,18 +1,18 @@
 /*******************************************************************************
  *
- *                  XC8_006: Matriz de LEDs 8x8: Mostrar car·cter estatico
+ *                  XC8_007: Matriz de LEDs 8x8: Mostrar car√°cter estatico
  *
  *******************************************************************************
  * FileName:        main.c
  * Processor:       PIC18F25K22
  * Complier:        XC8 v1.42 & MPLAB X IDE v3.61
- * Author:          Pedro S·nchez (MrChunckuee)
+ * Author:          Pedro S√°nchez (MrChunckuee)
  * Blog:            http://mrchunckuee.blogspot.com/
  * Email:           mrchunckuee.psr@gmail.com
  * Description:     Mostrar una imagen estatica en nuestra matriz de LEDs 8x8
  *******************************************************************************
  * Rev.         Date            Comment
- *   v1.00      24/05/2017      CreaciÛn del ejemplo
+ *   v1.00      24/05/2017      Creaci√≥n del ejemplo
  ******************************************************************************/
 #include <xc.h>
 #include <stdbool.h>
