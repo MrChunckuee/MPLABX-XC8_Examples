@@ -41,14 +41,13 @@ const char COL[8] = {0b00000001,
                      0b10000000};
 
 void MCU_Init(void);
-void MCU_Delayms(unsigned int t);
 
 void main(void) {
     MCU_Init(); //Inicializamos sistema
     while(true){
         PORTB = ROW[x]; //Mostramos 
         PORTC = COL[x]; //Hacemos barrido
-        MCU_Delayms(1);
+        __delay_ms(1);
         x++;//Incrementamos ROW y COL
         if(x>8) x=0;//No dejamos que pase de 8
     }
@@ -68,11 +67,4 @@ void MCU_Init(void){
     //Limpiamos puertos
     PORTB = 0x00;
     PORTC = 0x00;  
-}
-
-void MCU_Delayms(unsigned int t){
-    unsigned int acc;
-    for(acc=0; acc<t; acc++){
-        __delay_ms(1);
-    }
 }
