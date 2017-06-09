@@ -1,19 +1,19 @@
 /*******************************************************************************
  *
- *                  XC8_008: Semaforo
+ *                  XC8_008: Semaforo basico
  *
  *******************************************************************************
  * FileName:        main.c
  * Processor:       PIC16F84A
  * Complier:        XC8 v1.42 & MPLAB X IDE v3.61
- * Author:          Pedro Sánchez (MrChunckuee)
+ * Author:          Pedro SÃ¡nchez (MrChunckuee)
  * Blog:            http://mrchunckuee.blogspot.com/
  * Email:           mrchunckuee.psr@gmail.com
  * Description:     Simular con LEDs un par de semaforos, utilizando un ya muy 
  *                  conocido microcontrolador.
  *******************************************************************************
  * Rev.         Date            Comment
- *   v1.00      05/06/2017      Creación del ejemplo
+ *   v1.00      05/06/2017      CreaciÃ³n del ejemplo
  ******************************************************************************/
 #include <xc.h>
 
