@@ -6,7 +6,7 @@
  * FileName:        main.c
  * Processor:       PIC18F25K22
  * Complier:        XC8 v1.30
- * Author:          Pedro Sánchez (MrChunckuee)
+ * Author:          Pedro SÃ¡nchez (MrChunckuee)
  * Blog:            http://mrchunckuee.blogspot.com/
  * Email:           mrchunckuee.psr@gmail.com
  * Description:     Probando libreria para LCD 16x2, debo mencionar que no soy el
@@ -14,7 +14,7 @@
  *                  cabecera de lcd.c esta el enlace a su GitHub
  *******************************************************************************
  * Rev.         Date            Comment
- *   v1.00      03/02/2017      Creación del ejemplo
+ *   v1.00      03/02/2017      CreaciÃ³n del ejemplo
  ******************************************************************************/
 
 #include <stdio.h>
@@ -90,6 +90,7 @@ void MCU_Init(void){
     RTCC_Init();
 }
 
+//Rutina para retardos en milisegundos
 void MCU_Delayms(unsigned int time){
     unsigned int acc;
     for(acc=0; acc<time; acc++){
@@ -98,7 +99,7 @@ void MCU_Delayms(unsigned int time){
 }
 
 void RTCC_Init(void){
-    //Configuración del TMR0 = 1mS
+    //ConfiguraciÃ³n del TMR0 = 1mS
     T0CONbits.TMR0ON = 1; //TMR0 On
     T0CONbits.T08BIT = 0; //16 bits
     T0CONbits.T0CS = 0;
