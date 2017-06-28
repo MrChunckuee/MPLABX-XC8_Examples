@@ -1,6 +1,6 @@
 /*******************************************************************************
  *
- *                  XC8_009: Matriz de LEDs 8x8: Mostrar abecedario y numeros
+ *                  XC8_010: Matriz de LEDs 8x8: Mostrar abecedario y numeros
  *
  *******************************************************************************
  * FileName:        main.c
