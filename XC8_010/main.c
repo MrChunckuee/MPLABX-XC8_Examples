@@ -1,18 +1,18 @@
 /*******************************************************************************
  *
- *                  XC8_009: Matriz de LEDs 8x8: Mostrar letras y numeros
+ *                  XC8_009: Matriz de LEDs 8x8: Mostrar abecedario y numeros
  *
  *******************************************************************************
  * FileName:        main.c
  * Processor:       PIC18F25K22
  * Complier:        XC8 v1.42 & MPLAB X IDE v3.61
- * Author:          Pedro Sánchez (MrChunckuee)
+ * Author:          Pedro SÃ¡nchez (MrChunckuee)
  * Blog:            http://mrchunckuee.blogspot.com/
  * Email:           mrchunckuee.psr@gmail.com
  * Description:     Luces para regalo
  *******************************************************************************
  * Rev.         Date            Comment
- *   v1.00      28/06/2017      Creación del ejemplo
+ *   v1.00      28/06/2017      CreaciÃ³n del ejemplo
  ******************************************************************************/
 #include <xc.h>
 #include <stdbool.h>
