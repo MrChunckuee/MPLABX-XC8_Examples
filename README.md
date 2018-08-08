@@ -19,6 +19,7 @@ Programación de microcontroladores PICs en C, usando MPLAB x y XC8. Son algunas
 - XC8_009: Matriz de LEDs 8x8 - Mostrar mensaje estático
 - XC8_010: Matriz de LEDs 8x8 - Mostrar abecedario y numeros
 - XC8_011: LED Intermitente mediante interrupción
+- XC8_012: PWM por software - Controlando tiras de LEDs RGB
 
 ***
 Puedes seguirme en:
