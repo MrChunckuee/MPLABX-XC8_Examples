@@ -21,6 +21,8 @@ Programación de microcontroladores PICs en C, usando MPLAB x y XC8. Son algunas
 - XC8_011: LED Intermitente mediante interrupción
 - XC8_012: PWM por software - Controlando tiras de LEDs RGB
 - XC8_013: Corrimiento de LEDs usando operador de desplazamiento (efecto auto fantástico)
+- XC8_014: Probando el modulo Tiny RTC DS1307 con el PIC18F4620
+- XC8_015: Control de display de 7 segmentos catodo común
 
 ***
 Puedes seguirme en:
@@ -29,4 +31,3 @@ Puedes seguirme en:
 - [Twitter](https://twitter.com/MrChunckuee)
 - [GitHub](https://github.com/MrChunckuee)
 - [YouTube](https://www.youtube.com/user/mrchunckueepsr)
-- [Google+](https://plus.google.com/u/0/+PedroSanchez-MrChunckuee)
