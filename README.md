@@ -24,6 +24,7 @@ Programación de microcontroladores PICs en C, usando MPLAB x y XC8. Son algunas
 - XC8_014: Probando el modulo Tiny RTC DS1307 con el PIC18F4620
 - XC8_015: Control de display de 7 segmentos catodo común
 - XC8_016: Control de 4 displays de 7 segmentos con multiplexación
+- XC8_017: Uso del sensor ultrasonico HC-SR04 
 
 ***
 Puedes seguirme en:
