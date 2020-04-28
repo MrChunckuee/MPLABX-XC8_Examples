@@ -36,7 +36,7 @@
 
 /************** V A R I A B L E S *********************************************/
 //Variables utilizadas
-unsigned char Unidad , Decena , Centena, Millar; // Para controlar vizualización del Display
+unsigned char Unidad , Decena , Centena, Millar;
 unsigned int RTCC_Count;
 unsigned char currentDisplayState, buttonTicks;
 
