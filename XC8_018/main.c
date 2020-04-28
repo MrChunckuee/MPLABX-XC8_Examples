@@ -1,19 +1,19 @@
 /*******************************************************************************
  *
- *  XC8_016: Control de displays de 7 segmentos con botones
+ *  XC8_018: Control de displays de 7 segmentos con botones
  *
  *******************************************************************************
  * FileName:        main.c
  * Processor:       PIC18F4620
  * Complier:        XC8 v1.42 & MPLAB X IDE v5.00
- * Author:          Pedro Sánchez (MrChunckuee)
+ * Author:          Pedro SÃ¡nchez (MrChunckuee)
  * Blog:            http://mrchunckuee.blogspot.com/
  * Email:           mrchunckuee.psr@gmail.com
  * Description:     Mostramos el incremento o decremento en los diplays
  *                      RE0 incrementa, RE1 decrementa, RE2 seleciona display
  *******************************************************************************
  * Rev.         Date            Comment
- *   v0.0.0     26/04/2020      - Creación del ejemplo
+ *   v0.0.0     26/04/2020      - CreaciÃ³n del ejemplo
  ******************************************************************************/
 
 #include <stdio.h>
@@ -36,7 +36,7 @@
 
 /************** V A R I A B L E S *********************************************/
 //Variables utilizadas
-unsigned char Unidad , Decena , Centena, Millar; // Para controlar vizualización del Display
+unsigned char Unidad , Decena , Centena, Millar; // Para controlar vizualizaciÃ³n del Display
 unsigned int RTCC_Count;
 unsigned char currentDisplayState, buttonTicks;
 
@@ -108,7 +108,7 @@ void MCU_Init(void){
 }
 
 void RTCC_Init(void){
-    //Configuración del TMR0 = 1mS
+    //ConfiguraciÃ³n del TMR0 = 1mS
     T0CONbits.TMR0ON = 1; //TMR0 On
     T0CONbits.T08BIT = 0; //16 bits
     T0CONbits.T0CS = 0;
