@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project>
+  <executable name="dist/default/production\XC8_18F25K22_Matrix8x8_alphabet_num.X.production.hex">
+    <memory name="program">
+      <units>bytes</units>
+      <length>32768</length>
+      <used>1052</used>
+      <free>31716</free>
+    </memory>
+    <memory name="data">
+      <units>bytes</units>
+      <length>1536</length>
+      <used>10</used>
+      <free>1526</free>
+    </memory>
+  </executable>
+</project>
