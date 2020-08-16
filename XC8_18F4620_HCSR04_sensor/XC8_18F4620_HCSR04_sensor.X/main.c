@@ -23,7 +23,6 @@
 #include "word_config.h" //Only here
 #include "lcd.h"
 
-
 #define _XTAL_FREQ  8000000
 
 /*********** P O R T   D E F I N I T I O N S **********************************/
