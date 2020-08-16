@@ -1,0 +1,73 @@
+[p LITE_MODE AUTOSTATIC PIC14 PICREGULAR PICMID ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 12F675 ]
+[d frameptr 6 ]
+"62 C:\Program Files (x86)\Microchip\xc8\v1.42\sources\common\float.c
+[v ___ftpack __ftpack `(f  1 e 3 0 ]
+"86 C:\Program Files (x86)\Microchip\xc8\v1.42\sources\common\ftadd.c
+[v ___ftadd __ftadd `(f  1 e 3 0 ]
+"6 C:\Program Files (x86)\Microchip\xc8\v1.42\sources\pic\eeprom.c
+[v _eecpymem eecpymem `(v  1 e 1 0 ]
+"39
+[v _memcpyee memcpyee `(v  1 e 1 0 ]
+"36 C:\Users\mrchu_000\Documents\FW\XC8_12F675_LED_Blinker.X\main.c
+[v _main main `(v  1 e 1 0 ]
+"44
+[v _MCU_Init MCU_Init `(v  1 e 1 0 ]
+[s S23 . 1 `uc 1 GP0 1 0 :1:0 
+`uc 1 GP1 1 0 :1:1 
+`uc 1 GP2 1 0 :1:2 
+`uc 1 GP3 1 0 :1:3 
+`uc 1 GP4 1 0 :1:4 
+`uc 1 GP5 1 0 :1:5 
+]
+"239 C:\Program Files (x86)\Microchip\xc8\v1.42\include\pic12f675.h
+[s S30 . 1 `uc 1 GPIO0 1 0 :1:0 
+`uc 1 GPIO1 1 0 :1:1 
+`uc 1 GPIO2 1 0 :1:2 
+`uc 1 GPIO3 1 0 :1:3 
+`uc 1 GPIO4 1 0 :1:4 
+`uc 1 GPIO5 1 0 :1:5 
+]
+[u S37 . 1 `S23 1 . 1 0 `S30 1 . 1 0 ]
+[v _GPIObits GPIObits `VES37  1 e 1 @5 ]
+[s S87 . 1 `uc 1 CM 1 0 :3:0 
+`uc 1 CIS 1 0 :1:3 
+`uc 1 CINV 1 0 :1:4 
+`uc 1 . 1 0 :1:5 
+`uc 1 COUT 1 0 :1:6 
+]
+"581
+[s S93 . 1 `uc 1 CM0 1 0 :1:0 
+`uc 1 CM1 1 0 :1:1 
+`uc 1 CM2 1 0 :1:2 
+]
+[u S97 . 1 `S87 1 . 1 0 `S93 1 . 1 0 ]
+[v _CMCONbits CMCONbits `VES97  1 e 1 @25 ]
+"795
+[v _TRISIO TRISIO `VEuc  1 e 1 @133 ]
+[s S61 . 1 `uc 1 ANS 1 0 :4:0 
+`uc 1 ADCS 1 0 :3:4 
+]
+"1422
+[s S64 . 1 `uc 1 ANS0 1 0 :1:0 
+`uc 1 ANS1 1 0 :1:1 
+`uc 1 ANS2 1 0 :1:2 
+`uc 1 ANS3 1 0 :1:3 
+`uc 1 ADCS0 1 0 :1:4 
+`uc 1 ADCS1 1 0 :1:5 
+`uc 1 ADCS2 1 0 :1:6 
+]
+[u S72 . 1 `S61 1 . 1 0 `S64 1 . 1 0 ]
+[v _ANSELbits ANSELbits `VES72  1 e 1 @159 ]
+"36 C:\Users\mrchu_000\Documents\FW\XC8_12F675_LED_Blinker.X\main.c
+[v _main main `(v  1 e 1 0 ]
+{
+"42
+} 0
+"44
+[v _MCU_Init MCU_Init `(v  1 e 1 0 ]
+{
+"49
+} 0
