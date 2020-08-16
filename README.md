@@ -11,7 +11,7 @@ Programación de microcontroladores PICs en C, usando MPLAB x y XC8. Son algunas
 | **#**| **Nombre**| **Descripción**|
 | ---- | ---- | ---- | 
 | 1 | XC8_12F675_LED_Blinker | LED Intermitente |
-| 2 | XC8_002 | LEDs con efecto del auto fantastico |
+| 2 | XC8_12F675_LED_fantastic_car | LEDs con efecto del auto fantastico |
 | 3 | XC8_003 | Uso del ADC |
 | 4 | XC8_004 | Libreria para LCD Nokia5110 |  
 | 5 | XC8_005 | Uso de la libreria para LCD16x2 |  
