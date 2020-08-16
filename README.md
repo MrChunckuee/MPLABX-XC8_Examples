@@ -21,7 +21,7 @@ Programación de microcontroladores PICs en C, usando MPLAB x y XC8. Son algunas
 | 9 | XC8_18F25K22_matrix8x8_static_message | Matriz de LEDs 8x8 - Mostrar mensaje estático |  
 | 10 | XC8_18F25K22_Matrix8x8_alphabet+num | Matriz de LEDs 8x8 - Mostrar abecedario y numeros |  
 | 11 | XC8_18F25K22_LEDBlinker_interrupt_TMR0 | LED Intermitente mediante interrupción por TIMER0 |  
-| 12 | XC8_012 | PWM por software - Controlando tiras de LEDs RGB |  
+| 12 | XC8_18F25K22_PWMsoft_ctrl_LEDsRGB | PWM por software - Controlando tiras de LEDs RGB |  
 | 13 | XC8_013 | Corrimiento de LEDs usando operador de desplazamiento |  
 | 14 | XC8_014 | Probando el modulo Tiny RTC DS1307 con el PIC18F4620 |  
 | 15 | XC8_015 | Control de display de 7 segmentos catodo común |  
