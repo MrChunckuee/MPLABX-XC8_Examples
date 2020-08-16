@@ -1,18 +1,18 @@
 /*******************************************************************************
  *
- *  XC8_017: Uso del sensor ultrasonico HC-SR04 
+ *          Uso del sensor ultrasonico HC-SR04 
  *
  *******************************************************************************
  * FileName:        main.c
  * Processor:       PIC18F4620
  * Complier:        XC8 v1.42 & MPLAB X IDE v5.00
- * Author:          Pedro Sánchez (MrChunckuee)
+ * Author:          Pedro SÃ¡nchez (MrChunckuee)
  * Blog:            http://mrchunckuee.blogspot.com/
  * Email:           mrchunckuee.psr@gmail.com
  * Description:     Uso basico del sensor ultrasonico HC-SR04 
  *******************************************************************************
  * Rev.         Date            Comment
- *   v0.0.1     19/04/2020      - Creación del ejemplo
+ *   v0.0.1     19/04/2020      - CreaciÃ³n del ejemplo
  ******************************************************************************/
 
 #include <stdio.h>
