@@ -1,0 +1,427 @@
+[p LITE_MODE AUTOSTATIC LFSROK EMI_WORD ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 18F4620 ]
+[d frameptr 4065 ]
+"8 C:\Program Files (x86)\Microchip\xc8\v1.42\sources\common\awdiv.c
+[v ___awdiv __awdiv `(i  1 e 2 0 ]
+"8 C:\Program Files (x86)\Microchip\xc8\v1.42\sources\common\awmod.c
+[v ___awmod __awmod `(i  1 e 2 0 ]
+"62 C:\Program Files (x86)\Microchip\xc8\v1.42\sources\common\float.c
+[v ___ftpack __ftpack `(f  1 e 3 0 ]
+"86 C:\Program Files (x86)\Microchip\xc8\v1.42\sources\common\ftadd.c
+[v ___ftadd __ftadd `(f  1 e 3 0 ]
+"54 C:\Program Files (x86)\Microchip\xc8\v1.42\sources\common\ftdiv.c
+[v ___ftdiv __ftdiv `(f  1 e 3 0 ]
+"62 C:\Program Files (x86)\Microchip\xc8\v1.42\sources\common\ftmul.c
+[v ___ftmul __ftmul `(f  1 e 3 0 ]
+"20 C:\Program Files (x86)\Microchip\xc8\v1.42\sources\common\ftsub.c
+[v ___ftsub __ftsub `(f  1 e 3 0 ]
+"10 C:\Program Files (x86)\Microchip\xc8\v1.42\sources\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 3 0 ]
+"245
+[v ___flsub __flsub `(d  1 e 3 0 ]
+"11 C:\Program Files (x86)\Microchip\xc8\v1.42\sources\common\sprcdiv.c
+[v ___fldiv __fldiv `(d  1 e 3 0 ]
+"8 C:\Program Files (x86)\Microchip\xc8\v1.42\sources\common\sprcmul.c
+[v ___flmul __flmul `(d  1 e 3 0 ]
+"15 C:\Program Files (x86)\Microchip\xc8\v1.42\sources\common\Umul32.c
+[v ___lmul __lmul `(ul  1 e 4 0 ]
+"57 C:\Users\mrchu_000\Documents\FW\XC8_18F4620_DS1307_rtc.X\ds1307.c
+[v _Write_Bytes_To_DS1307_RTC Write_Bytes_To_DS1307_RTC `(v  1 e 1 0 ]
+"81
+[v _Read_Bytes_From_DS1307_RTC Read_Bytes_From_DS1307_RTC `(v  1 e 1 0 ]
+"117
+[v _Set_DS1307_RTC_Time Set_DS1307_RTC_Time `(v  1 e 1 0 ]
+"146
+[v _Get_DS1307_RTC_Time Get_DS1307_RTC_Time `(*.39uc  1 e 2 0 ]
+"189
+[v _Set_DS1307_RTC_Date Set_DS1307_RTC_Date `(v  1 e 1 0 ]
+"210
+[v _Get_DS1307_RTC_Date Get_DS1307_RTC_Date `(*.39uc  1 e 2 0 ]
+"8 C:\Users\mrchu_000\Documents\FW\XC8_18F4620_DS1307_rtc.X\i2c.c
+[v _InitI2C InitI2C `(v  1 e 1 0 ]
+"19
+[v _I2C_Start I2C_Start `(v  1 e 1 0 ]
+"28
+[v _I2C_ReStart I2C_ReStart `(v  1 e 1 0 ]
+"37
+[v _I2C_Stop I2C_Stop `(v  1 e 1 0 ]
+"47
+[v _I2C_Send_ACK I2C_Send_ACK `(v  1 e 1 0 ]
+"57
+[v _I2C_Send_NACK I2C_Send_NACK `(v  1 e 1 0 ]
+"67
+[v _I2C_Write_Byte I2C_Write_Byte `(b  1 e 0 0 ]
+"78
+[v _I2C_Read_Byte I2C_Read_Byte `(uc  1 e 1 0 ]
+"17 C:\Users\mrchu_000\Documents\FW\XC8_18F4620_DS1307_rtc.X\lcd.c
+[v _LCD_Init LCD_Init `(v  1 e 1 0 ]
+"58
+[v _LCD_Strobe LCD_Strobe `(v  1 e 1 0 ]
+"66
+[v _LCD_WriteNibble LCD_WriteNibble `(v  1 e 1 0 ]
+"83
+[v _LCD_WriteCommand LCD_WriteCommand `(v  1 e 1 0 ]
+"108
+[v _LCD_WriteData LCD_WriteData `(v  1 e 1 0 ]
+"132
+[v _LCD_Putc_xy LCD_Putc_xy `(v  1 e 1 0 ]
+"149
+[v _LCD_GotoXY LCD_GotoXY `(v  1 e 1 0 ]
+"271
+[v _LCD_Putrs LCD_Putrs `(v  1 e 1 0 ]
+"34 C:\Users\mrchu_000\Documents\FW\XC8_18F4620_DS1307_rtc.X\main.c
+[v _main main `(v  1 e 1 0 ]
+"54
+[v _MCU_Init MCU_Init `(v  1 e 1 0 ]
+"72
+[v _MCU_HelloMessage MCU_HelloMessage `(v  1 e 1 0 ]
+"80
+[v _DisplayTimeToLCD DisplayTimeToLCD `(v  1 e 1 0 ]
+"104
+[v _DisplayDateOnLCD DisplayDateOnLCD `(v  1 e 1 0 ]
+"50 C:\Program Files (x86)\Microchip\xc8\v1.42\include\pic18f4620.h
+[v _PORTA PORTA `VEuc  1 e 1 @3968 ]
+"187
+[v _PORTB PORTB `VEuc  1 e 1 @3969 ]
+"358
+[v _PORTC PORTC `VEuc  1 e 1 @3970 ]
+"533
+[v _PORTD PORTD `VEuc  1 e 1 @3971 ]
+[s S132 . 1 `uc 1 RD0 1 0 :1:0 
+`uc 1 RD1 1 0 :1:1 
+`uc 1 RD2 1 0 :1:2 
+`uc 1 RD3 1 0 :1:3 
+`uc 1 RD4 1 0 :1:4 
+`uc 1 RD5 1 0 :1:5 
+`uc 1 RD6 1 0 :1:6 
+`uc 1 RD7 1 0 :1:7 
+]
+"570
+[s S141 . 1 `uc 1 PSP0 1 0 :1:0 
+`uc 1 PSP1 1 0 :1:1 
+`uc 1 PSP2 1 0 :1:2 
+`uc 1 PSP3 1 0 :1:3 
+`uc 1 PSP4 1 0 :1:4 
+`uc 1 PSP5 1 0 :1:5 
+`uc 1 PSP6 1 0 :1:6 
+`uc 1 PSP7 1 0 :1:7 
+]
+[s S150 . 1 `uc 1 . 1 0 :5:0 
+`uc 1 P1B 1 0 :1:5 
+`uc 1 P1C 1 0 :1:6 
+`uc 1 P1D 1 0 :1:7 
+]
+[s S155 . 1 `uc 1 . 1 0 :7:0 
+`uc 1 SS2 1 0 :1:7 
+]
+[u S158 . 1 `S132 1 . 1 0 `S141 1 . 1 0 `S150 1 . 1 0 `S155 1 . 1 0 ]
+[v _PORTDbits PORTDbits `VES158  1 e 1 @3971 ]
+"1378
+[v _TRISA TRISA `VEuc  1 e 1 @3986 ]
+"1600
+[v _TRISB TRISB `VEuc  1 e 1 @3987 ]
+"1822
+[v _TRISC TRISC `VEuc  1 e 1 @3988 ]
+"2044
+[v _TRISD TRISD `VEuc  1 e 1 @3989 ]
+[s S301 . 1 `uc 1 TUN 1 0 :5:0 
+`uc 1 . 1 0 :1:5 
+`uc 1 PLLEN 1 0 :1:6 
+`uc 1 INTSRC 1 0 :1:7 
+]
+"2450
+[s S306 . 1 `uc 1 TUN0 1 0 :1:0 
+`uc 1 TUN1 1 0 :1:1 
+`uc 1 TUN2 1 0 :1:2 
+`uc 1 TUN3 1 0 :1:3 
+`uc 1 TUN4 1 0 :1:4 
+]
+[u S312 . 1 `S301 1 . 1 0 `S306 1 . 1 0 ]
+[v _OSCTUNEbits OSCTUNEbits `VES312  1 e 1 @3995 ]
+"4442
+[v _ADCON1 ADCON1 `VEuc  1 e 1 @4033 ]
+"4729
+[v _SSPCON1 SSPCON1 `VEuc  1 e 1 @4038 ]
+"4799
+[v _SSPSTAT SSPSTAT `VEuc  1 e 1 @4039 ]
+"5020
+[v _SSPADD SSPADD `VEuc  1 e 1 @4040 ]
+"5027
+[v _SSPBUF SSPBUF `VEuc  1 e 1 @4041 ]
+[s S271 . 1 `uc 1 SCS 1 0 :2:0 
+`uc 1 IOFS 1 0 :1:2 
+`uc 1 OSTS 1 0 :1:3 
+`uc 1 IRCF 1 0 :3:4 
+`uc 1 IDLEN 1 0 :1:7 
+]
+"5799
+[s S277 . 1 `uc 1 SCS0 1 0 :1:0 
+`uc 1 SCS1 1 0 :1:1 
+`uc 1 . 1 0 :2:2 
+`uc 1 IRCF0 1 0 :1:4 
+`uc 1 IRCF1 1 0 :1:5 
+`uc 1 IRCF2 1 0 :1:6 
+]
+[u S284 . 1 `S271 1 . 1 0 `S277 1 . 1 0 ]
+[v _OSCCONbits OSCCONbits `VES284  1 e 1 @4051 ]
+"6727
+[v _ACKDT ACKDT `VEb  1 e 0 @32301 ]
+"6729
+[v _ACKEN ACKEN `VEb  1 e 0 @32300 ]
+"6731
+[v _ACKSTAT ACKSTAT `VEb  1 e 0 @32302 ]
+"7343
+[v _PEN PEN `VEb  1 e 0 @32298 ]
+"7459
+[v _RCEN RCEN `VEb  1 e 0 @32299 ]
+"7505
+[v _RSEN RSEN `VEb  1 e 0 @32297 ]
+"7543
+[v _SEN SEN `VEb  1 e 0 @32296 ]
+"7579
+[v _SSPIF SSPIF `VEb  1 e 0 @31987 ]
+"7761
+[v _TRISC3 TRISC3 `VEb  1 e 0 @31907 ]
+"7763
+[v _TRISC4 TRISC4 `VEb  1 e 0 @31908 ]
+"5 C:\Users\mrchu_000\Documents\FW\XC8_18F4620_DS1307_rtc.X\ds1307.c
+[v _pRTCArray pRTCArray `[4]uc  1 e 4 0 ]
+"6
+[v _Temp Temp `uc  1 e 1 0 ]
+"34 C:\Users\mrchu_000\Documents\FW\XC8_18F4620_DS1307_rtc.X\main.c
+[v _main main `(v  1 e 1 0 ]
+{
+"52
+} 0
+"117 C:\Users\mrchu_000\Documents\FW\XC8_18F4620_DS1307_rtc.X\ds1307.c
+[v _Set_DS1307_RTC_Time Set_DS1307_RTC_Time `(v  1 e 1 0 ]
+{
+[v Set_DS1307_RTC_Time@Mode Mode `uc  1 a 1 wreg ]
+[v Set_DS1307_RTC_Time@Mode Mode `uc  1 a 1 wreg ]
+[v Set_DS1307_RTC_Time@Hours Hours `uc  1 p 1 9 ]
+[v Set_DS1307_RTC_Time@Mins Mins `uc  1 p 1 10 ]
+[v Set_DS1307_RTC_Time@Secs Secs `uc  1 p 1 11 ]
+"120
+[v Set_DS1307_RTC_Time@Mode Mode `uc  1 a 1 14 ]
+"134
+} 0
+"189
+[v _Set_DS1307_RTC_Date Set_DS1307_RTC_Date `(v  1 e 1 0 ]
+{
+[v Set_DS1307_RTC_Date@Date Date `uc  1 a 1 wreg ]
+[v Set_DS1307_RTC_Date@Date Date `uc  1 a 1 wreg ]
+[v Set_DS1307_RTC_Date@Month Month `uc  1 p 1 9 ]
+[v Set_DS1307_RTC_Date@Year Year `uc  1 p 1 10 ]
+[v Set_DS1307_RTC_Date@Day Day `uc  1 p 1 11 ]
+"192
+[v Set_DS1307_RTC_Date@Date Date `uc  1 a 1 14 ]
+"199
+} 0
+"57
+[v _Write_Bytes_To_DS1307_RTC Write_Bytes_To_DS1307_RTC `(v  1 e 1 0 ]
+{
+[v Write_Bytes_To_DS1307_RTC@Address Address `uc  1 a 1 wreg ]
+"59
+[v Write_Bytes_To_DS1307_RTC@i i `ui  1 a 2 7 ]
+"57
+[v Write_Bytes_To_DS1307_RTC@Address Address `uc  1 a 1 wreg ]
+[v Write_Bytes_To_DS1307_RTC@pData pData `*.39uc  1 p 2 1 ]
+[v Write_Bytes_To_DS1307_RTC@NoOfBytes NoOfBytes `uc  1 p 1 3 ]
+"61
+[v Write_Bytes_To_DS1307_RTC@Address Address `uc  1 a 1 6 ]
+"73
+} 0
+"54 C:\Users\mrchu_000\Documents\FW\XC8_18F4620_DS1307_rtc.X\main.c
+[v _MCU_Init MCU_Init `(v  1 e 1 0 ]
+{
+"70
+} 0
+"72
+[v _MCU_HelloMessage MCU_HelloMessage `(v  1 e 1 0 ]
+{
+"78
+} 0
+"17 C:\Users\mrchu_000\Documents\FW\XC8_18F4620_DS1307_rtc.X\lcd.c
+[v _LCD_Init LCD_Init `(v  1 e 1 0 ]
+{
+"48
+} 0
+"66
+[v _LCD_WriteNibble LCD_WriteNibble `(v  1 e 1 0 ]
+{
+[v LCD_WriteNibble@LCD_COMMAND LCD_COMMAND `uc  1 a 1 wreg ]
+"67
+[v LCD_WriteNibble@LCD_PORT_DATA LCD_PORT_DATA `uc  1 a 1 2 ]
+"66
+[v LCD_WriteNibble@LCD_COMMAND LCD_COMMAND `uc  1 a 1 wreg ]
+[v LCD_WriteNibble@LCD_COMMAND LCD_COMMAND `uc  1 a 1 1 ]
+"75
+} 0
+"8 C:\Users\mrchu_000\Documents\FW\XC8_18F4620_DS1307_rtc.X\i2c.c
+[v _InitI2C InitI2C `(v  1 e 1 0 ]
+{
+"15
+} 0
+"146 C:\Users\mrchu_000\Documents\FW\XC8_18F4620_DS1307_rtc.X\ds1307.c
+[v _Get_DS1307_RTC_Time Get_DS1307_RTC_Time `(*.39uc  1 e 2 0 ]
+{
+"178
+} 0
+"210
+[v _Get_DS1307_RTC_Date Get_DS1307_RTC_Date `(*.39uc  1 e 2 0 ]
+{
+"228
+} 0
+"81
+[v _Read_Bytes_From_DS1307_RTC Read_Bytes_From_DS1307_RTC `(v  1 e 1 0 ]
+{
+[v Read_Bytes_From_DS1307_RTC@Address Address `uc  1 a 1 wreg ]
+"83
+[v Read_Bytes_From_DS1307_RTC@i i `ui  1 a 2 6 ]
+"81
+[v Read_Bytes_From_DS1307_RTC@Address Address `uc  1 a 1 wreg ]
+[v Read_Bytes_From_DS1307_RTC@pData pData `*.39uc  1 p 2 1 ]
+[v Read_Bytes_From_DS1307_RTC@NoOfBytes NoOfBytes `ui  1 p 2 3 ]
+"85
+[v Read_Bytes_From_DS1307_RTC@Address Address `uc  1 a 1 5 ]
+"107
+} 0
+"67 C:\Users\mrchu_000\Documents\FW\XC8_18F4620_DS1307_rtc.X\i2c.c
+[v _I2C_Write_Byte I2C_Write_Byte `(b  1 e 0 0 ]
+{
+[v I2C_Write_Byte@Byte Byte `uc  1 a 1 wreg ]
+[v I2C_Write_Byte@Byte Byte `uc  1 a 1 wreg ]
+"69
+[v I2C_Write_Byte@Byte Byte `uc  1 a 1 0 ]
+"74
+} 0
+"37
+[v _I2C_Stop I2C_Stop `(v  1 e 1 0 ]
+{
+"42
+} 0
+"19
+[v _I2C_Start I2C_Start `(v  1 e 1 0 ]
+{
+"24
+} 0
+"57
+[v _I2C_Send_NACK I2C_Send_NACK `(v  1 e 1 0 ]
+{
+"63
+} 0
+"47
+[v _I2C_Send_ACK I2C_Send_ACK `(v  1 e 1 0 ]
+{
+"53
+} 0
+"78
+[v _I2C_Read_Byte I2C_Read_Byte `(uc  1 e 1 0 ]
+{
+"85
+} 0
+"28
+[v _I2C_ReStart I2C_ReStart `(v  1 e 1 0 ]
+{
+"33
+} 0
+"80 C:\Users\mrchu_000\Documents\FW\XC8_18F4620_DS1307_rtc.X\main.c
+[v _DisplayTimeToLCD DisplayTimeToLCD `(v  1 e 1 0 ]
+{
+[v DisplayTimeToLCD@pTimeArray pTimeArray `*.39uc  1 p 2 15 ]
+"99
+} 0
+"104
+[v _DisplayDateOnLCD DisplayDateOnLCD `(v  1 e 1 0 ]
+{
+[v DisplayDateOnLCD@pDateArray pDateArray `*.39uc  1 p 2 15 ]
+"128
+} 0
+"8 C:\Program Files (x86)\Microchip\xc8\v1.42\sources\common\awmod.c
+[v ___awmod __awmod `(i  1 e 2 0 ]
+{
+"11
+[v ___awmod@sign sign `uc  1 a 1 5 ]
+[v ___awmod@counter counter `uc  1 a 1 4 ]
+"8
+[v ___awmod@dividend dividend `i  1 p 2 0 ]
+[v ___awmod@divisor divisor `i  1 p 2 2 ]
+"35
+} 0
+"8 C:\Program Files (x86)\Microchip\xc8\v1.42\sources\common\awdiv.c
+[v ___awdiv __awdiv `(i  1 e 2 0 ]
+{
+"11
+[v ___awdiv@quotient quotient `i  1 a 2 6 ]
+"12
+[v ___awdiv@sign sign `uc  1 a 1 5 ]
+[v ___awdiv@counter counter `uc  1 a 1 4 ]
+"8
+[v ___awdiv@dividend dividend `i  1 p 2 0 ]
+[v ___awdiv@divisor divisor `i  1 p 2 2 ]
+"42
+} 0
+"271 C:\Users\mrchu_000\Documents\FW\XC8_18F4620_DS1307_rtc.X\lcd.c
+[v _LCD_Putrs LCD_Putrs `(v  1 e 1 0 ]
+{
+"273
+[v LCD_Putrs@LCD_INDEX LCD_INDEX `uc  1 a 1 14 ]
+"274
+[v LCD_Putrs@LCD_WIDE_COUNT LCD_WIDE_COUNT `uc  1 a 1 13 ]
+"271
+[v LCD_Putrs@LCD_STRING LCD_STRING `*.33Cuc  1 p 3 5 ]
+[v LCD_Putrs@LCD_X LCD_X `uc  1 p 1 8 ]
+[v LCD_Putrs@LCD_Y LCD_Y `uc  1 p 1 9 ]
+"283
+} 0
+"132
+[v _LCD_Putc_xy LCD_Putc_xy `(v  1 e 1 0 ]
+{
+[v LCD_Putc_xy@LCD_DATA LCD_DATA `uc  1 a 1 wreg ]
+[v LCD_Putc_xy@LCD_DATA LCD_DATA `uc  1 a 1 wreg ]
+[v LCD_Putc_xy@LCD_X LCD_X `uc  1 p 1 8 ]
+[v LCD_Putc_xy@LCD_Y LCD_Y `uc  1 p 1 9 ]
+"134
+[v LCD_Putc_xy@LCD_DATA LCD_DATA `uc  1 a 1 10 ]
+"136
+} 0
+"108
+[v _LCD_WriteData LCD_WriteData `(v  1 e 1 0 ]
+{
+[v LCD_WriteData@LCD_DATA LCD_DATA `uc  1 a 1 wreg ]
+"110
+[v LCD_WriteData@LCD_PORT_DATA LCD_PORT_DATA `uc  1 a 1 2 ]
+"108
+[v LCD_WriteData@LCD_DATA LCD_DATA `uc  1 a 1 wreg ]
+"110
+[v LCD_WriteData@LCD_DATA LCD_DATA `uc  1 a 1 1 ]
+"122
+} 0
+"149
+[v _LCD_GotoXY LCD_GotoXY `(v  1 e 1 0 ]
+{
+[v LCD_GotoXY@LCD_X LCD_X `uc  1 a 1 wreg ]
+[v LCD_GotoXY@LCD_X LCD_X `uc  1 a 1 wreg ]
+[v LCD_GotoXY@LCD_Y LCD_Y `uc  1 p 1 3 ]
+[v LCD_GotoXY@LCD_X LCD_X `uc  1 a 1 4 ]
+"170
+} 0
+"83
+[v _LCD_WriteCommand LCD_WriteCommand `(v  1 e 1 0 ]
+{
+[v LCD_WriteCommand@LCD_COMMAND LCD_COMMAND `uc  1 a 1 wreg ]
+"85
+[v LCD_WriteCommand@LCD_PORT_DATA LCD_PORT_DATA `uc  1 a 1 1 ]
+"83
+[v LCD_WriteCommand@LCD_COMMAND LCD_COMMAND `uc  1 a 1 wreg ]
+"85
+[v LCD_WriteCommand@LCD_COMMAND LCD_COMMAND `uc  1 a 1 2 ]
+"99
+} 0
+"58
+[v _LCD_Strobe LCD_Strobe `(v  1 e 1 0 ]
+{
+"63
+} 0

@@ -1,0 +1,204 @@
+
+# 1 "ds1307.c"
+
+# 34 "ds1307.h"
+void Write_Byte_To_DS1307_RTC(unsigned char, unsigned char);
+unsigned char Read_Byte_From_DS1307_RTC(unsigned char);
+void Write_Bytes_To_DS1307_RTC(unsigned char,unsigned char*,unsigned char);
+void Read_Bytes_From_DS1307_RTC(unsigned char,unsigned char*,unsigned int);
+void Set_DS1307_RTC_Time(unsigned char,unsigned char,unsigned char,unsigned char);
+unsigned char* Get_DS1307_RTC_Time(void);
+void Set_DS1307_RTC_Date(unsigned char,unsigned char,unsigned char,unsigned char);
+unsigned char* Get_DS1307_RTC_Date(void);
+
+# 25 "i2c.h"
+void InitI2C(void);
+void I2C_Start(void);
+void I2C_ReStart(void);
+void I2C_Stop(void);
+void I2C_Send_ACK(void);
+void I2C_Send_NACK(void);
+bit I2C_Write_Byte(unsigned char);
+unsigned char I2C_Read_Byte(void);
+
+# 5 "ds1307.c"
+unsigned char pRTCArray[4];
+unsigned char Temp;
+
+
+
+
+void Write_Byte_To_DS1307_RTC(unsigned char Address, unsigned char DataByte)
+{
+I2C_Start();
+
+
+while(I2C_Write_Byte(0xD0 + 0) == 1)
+{ I2C_Start(); }
+
+I2C_Write_Byte(Address);
+I2C_Write_Byte(DataByte);
+I2C_Stop();
+}
+
+# 28
+unsigned char Read_Byte_From_DS1307_RTC(unsigned char Address)
+{
+unsigned char Byte = 0;
+
+I2C_Start();
+
+
+while(I2C_Write_Byte(0xD0 + 0) == 1)
+{ I2C_Start(); }
+
+I2C_Write_Byte(Address);
+I2C_ReStart();
+
+
+I2C_Write_Byte(0xD0 + 1);
+
+Byte = I2C_Read_Byte();
+
+I2C_Send_NACK();
+I2C_Stop();
+
+return Byte;
+}
+
+# 57
+void Write_Bytes_To_DS1307_RTC(unsigned char Address,unsigned char* pData,unsigned char NoOfBytes)
+{
+unsigned int i;
+
+I2C_Start();
+
+
+while(I2C_Write_Byte(0xD0 + 0) == 1)
+{ I2C_Start(); }
+
+I2C_Write_Byte(Address);
+
+for(i=0;i<NoOfBytes;i++)
+I2C_Write_Byte(pData[i]);
+
+I2C_Stop();
+}
+
+# 81
+void Read_Bytes_From_DS1307_RTC(unsigned char Address, unsigned char* pData, unsigned int NoOfBytes)
+{
+unsigned int i;
+
+I2C_Start();
+
+
+while(I2C_Write_Byte(0xD0 + 0) == 1)
+{ I2C_Start(); }
+
+I2C_Write_Byte(Address);
+I2C_ReStart();
+
+
+I2C_Write_Byte(0xD0 + 1);
+
+pData[0] = I2C_Read_Byte();
+
+for(i=1;i<NoOfBytes;i++)
+{
+I2C_Send_ACK();
+pData[i] = I2C_Read_Byte();
+}
+
+I2C_Send_NACK();
+I2C_Stop();
+}
+
+# 117
+void Set_DS1307_RTC_Time(unsigned char Mode, unsigned char Hours, unsigned char Mins, unsigned char Secs)
+{
+
+pRTCArray[0] = (((unsigned char)(Secs/10))<<4)|((unsigned char)(Secs%10));
+pRTCArray[1] = (((unsigned char)(Mins/10))<<4)|((unsigned char)(Mins%10));
+pRTCArray[2] = (((unsigned char)(Hours/10))<<4)|((unsigned char)(Hours%10));
+
+switch(Mode)
+{
+case 0: pRTCArray[2] |= 0x40; break;
+case 1: pRTCArray[2] |= 0x60; break;
+
+default: break;
+}
+
+
+Write_Bytes_To_DS1307_RTC(0x00, pRTCArray, 3);
+}
+
+# 146
+unsigned char* Get_DS1307_RTC_Time(void)
+{
+
+Read_Bytes_From_DS1307_RTC(0x00, pRTCArray, 3);
+
+
+Temp = pRTCArray[0];
+pRTCArray[0] = ((Temp&0x7F)>>4)*10 + (Temp&0x0F);
+
+
+Temp = pRTCArray[1];
+pRTCArray[1] = (Temp>>4)*10 + (Temp&0x0F);
+
+
+if(pRTCArray[2]&0x40)
+{
+if(pRTCArray[2]&0x20)
+pRTCArray[3] = 1;
+else
+pRTCArray[3] = 0;
+
+Temp = pRTCArray[2];
+pRTCArray[2] = ((Temp&0x1F)>>4)*10 + (Temp&0x0F);
+}
+else
+{
+Temp = pRTCArray[2];
+pRTCArray[2] = (Temp>>4)*10 + (Temp&0x0F);
+pRTCArray[3] = 2;
+}
+
+return pRTCArray;
+}
+
+# 189
+void Set_DS1307_RTC_Date(unsigned char Date, unsigned char Month, unsigned char Year, unsigned char Day)
+{
+
+pRTCArray[0] = (((unsigned char)(Day/10))<<4)|((unsigned char)(Day%10));
+pRTCArray[1] = (((unsigned char)(Date/10))<<4)|((unsigned char)(Date%10));
+pRTCArray[2] = (((unsigned char)(Month/10))<<4)|((unsigned char)(Month%10));
+pRTCArray[3] = (((unsigned char)(Year/10))<<4)|((unsigned char)(Year%10));
+
+
+Write_Bytes_To_DS1307_RTC(0x03, pRTCArray, 4);
+}
+
+# 210
+unsigned char* Get_DS1307_RTC_Date(void)
+{
+
+Read_Bytes_From_DS1307_RTC(0x03, pRTCArray, 4);
+
+
+Temp = pRTCArray[1];
+pRTCArray[1] = (Temp>>4)*10 + (Temp&0x0F);
+
+
+Temp = pRTCArray[2];
+pRTCArray[2] = (Temp>>4)*10 + (Temp&0x0F);
+
+
+Temp = pRTCArray[3];
+pRTCArray[3] = (Temp>>4)*10 + (Temp&0x0F);
+
+return pRTCArray;
+}
