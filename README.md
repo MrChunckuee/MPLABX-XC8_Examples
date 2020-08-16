@@ -15,7 +15,7 @@ Programación de microcontroladores PICs en C, usando MPLAB x y XC8. Son algunas
 | 3 | XC8_003 | Uso del ADC |
 | 4 | XC8_004 | Libreria para LCD Nokia5110 |  
 | 5 | XC8_005 | Uso de la libreria para LCD16x2 |  
-| 6 | XC8_006 | Probando módulos nRF24L01+ |  
+| 6 | XC8_18FXXKXX_nRF24L01 | Probando módulos nRF24L01+ |  
 | 7 | XC8_007 | Matriz de LEDs 8x8 - Mostrar carácter estático |  
 | 8 | XC8_008 | Semáforo básico |  
 | 9 | XC8_009 | Matriz de LEDs 8x8 - Mostrar mensaje estático |  
