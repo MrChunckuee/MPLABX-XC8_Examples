@@ -29,6 +29,13 @@ Programación de microcontroladores PICs en C, usando MPLAB x y XC8. Son algunas
 | 17 | XC8_18F4620_HCSR04_sensor | Uso del sensor ultrasonico HC-SR04  | 
 | 18 | XC8_18F4620_Ctrl_7seg_botones | Control de display de 7 segmentos con botones |  
 | 19 | XC8_MCC_18F25K22_TMR0_Interrupt | Interrupción derbordamiento del TIMER 0, usando el MPLAB Code Configurator |
+| 20 |  |  |
+| 21 |  |  |
+| 22 |  |  |
+| 23 |  |  |
+| 24 |  |  |
+| 25 |  |  |
+
 
 ***
 Puedes seguirme en:
