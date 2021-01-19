@@ -1,0 +1,16 @@
+# Ignorar archivos de compilación
+*.err
+build/
+debug/
+dist/default/production/*.cmf
+dist/default/production/*.elf
+dist/default/production/*.hxl
+dist/default/production/*.lst
+dist/default/production/*.map
+dist/default/production/*.mum
+dist/default/production/*.o
+dist/default/production/*.rlf
+dist/default/production/*.sdb
+dist/default/production/*.sym
+dist/default/production/*.xml
+dist/default/production/*.cof
