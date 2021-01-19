@@ -10,6 +10,7 @@ Programación de microcontroladores PICs en C, usando MPLAB x y XC8. Son algunas
 **Listado de material disponible:**
 | **#**| **Nombre**| **Descripción**|
 | ---- | ---- | ---- | 
+| 0 | Librerias| Contiene las bibliotecas que se usan en algunos ejemplos de este repositorio | 
 | 1 | XC8_12F675_LED_Blinker | LED Intermitente |
 | 2 | XC8_12F675_LED_fantastic_car | LEDs con efecto del auto fantastico |
 | 3 | XC8_12F675_ADC_LEDs_potenciometro | Uso del ADC: Controlar velocidad de LEDs con potenciometro |
