@@ -1,6 +1,7 @@
 # Ignorar archivos de compilación
 *.err
 build/
+debug/
 dist/default/production/*.cmf
 dist/default/production/*.elf
 dist/default/production/*.hxl
