@@ -1,0 +1,26 @@
+# Ignorar archivos de compilación XC8
+*.err
+
+#Ignorar archivos de la carpeta build
+build/
+
+#Ignorar archivos de la carpeta dist
+*.xml
+*.cmf
+*.elf
+# *.hex  #Descomentar para cargar HEX
+*.hxl
+*.lst
+*.map
+*.mum
+*.obj
+*.rlf
+*.sdb
+*.cof
+*.sym
+
+#Algunos proyectos incluyen simulacion en proteus
+#asi que ignoramos los siguientes archivos
+*.workspace
+*.pdsbak
+*.pdsprj
